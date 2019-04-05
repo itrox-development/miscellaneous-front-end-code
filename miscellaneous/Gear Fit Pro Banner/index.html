@@ -1,0 +1,157 @@
+	<!-- START TEMPLATE -->
+
+	<style>
+		/*  this uses BEM for class names  */
+		/*  */
+
+		.banner *, .banner *:after, .banner *:before{
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+
+		.banner img{
+			width:  100%;
+		}
+
+		.banner{
+			background: #f9f9f9;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			max-height: 280px;
+			overflow: hidden;
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+
+		.banner:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.banner-inner{
+
+		}
+
+		.banner h2{
+			font-size: 56px;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+
+		.banner p{
+			font-size: 28px;
+			margin: 7px 0 15px 0;
+		}
+
+		.banner-copy{
+			float: left;
+			width: 50%;
+			padding: 32px;
+		}
+
+		.banner-image{
+			float: right;
+			width: 50%;
+			max-width: 589px;
+		}
+
+		.banner-image-desktop{
+			width: 100%;
+			background: url('http://images.samsung.com/is/image/samsung/p5/uk/Wearables/gear-fit-2/5472_GearFit2Pro_off_MMPbanner.jpg') no-repeat;
+			background-size: contain;
+			height: 100%;
+			padding: 290px;
+		}
+
+		.banner .banner-image-mobile{
+			display: none;
+		}
+
+		@media screen and (max-width: 1200px){
+
+			.banner h2{
+				font-size: 3.7vw;
+			}
+
+			.banner p{
+				font-size: 1.9vw;
+			}
+		}
+
+		@media screen and (max-width: 768px){
+
+			.banner h2{
+				font-size: 7.7vw;
+			}
+
+			.banner p{
+				font-size: 3.5vw;
+			}
+
+			.s-btn-encased{
+				padding:  2.31944vw 2.91667vw 2.25vw;
+				font-size: 2.83333vw;
+			}
+
+			.banner{
+				max-height: none;
+			}
+
+			.banner-image{
+				max-width: 100%;
+			}
+
+			.banner .banner-image-mobile{
+				display: inline-block;
+				width: 100%;
+			}
+
+			.banner .banner-image-desktop{
+				display: none;
+			}
+
+			.banner-copy,
+			.banner-image{
+				float: none;
+				width: 100%;
+			}
+
+            
+            
+
+		}
+        
+        
+        .disclaimer{
+            
+            font-size:12px !important;
+            
+        }
+
+	</style>
+
+	<div class="banner">
+		<div class="banner-inner">
+			<div class="banner-copy">
+				<h2>Go beyond fitness</h2><br>
+				<p>Purchase the Gear Fit2 Pro now and receive a pair of <br> Speedo goggles</p><br>
+<p class="disclaimer">   *5ATM water resistance </p>
+				<!--<a href="https://shop.samsung.com/uk/mobiles+wearables/wearables/" class="s-btn-encased s-black" target="_blank" title="Open in a New Window">Pre-order now</a>-->
+
+			</div>
+			<div class="banner-image">
+				<div class="banner-image-desktop">
+					<!-- <img class="image-desktop" src="5472_GearFit2Pro_off_MMPbanner.jpg" alt=""> -->
+				</div>
+				<div class="banner-image-mobile">
+					<img class="" src="http://images.samsung.com/is/image/samsung/p5/uk/Wearables/gear-fit-2/5472_GearFit2Pro_MMPmobile.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- END TEMPLATE -->
